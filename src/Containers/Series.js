@@ -24,7 +24,7 @@ class Series extends Component {
     return (
       <div>
         <div>
-          <p>You Can Find Details About your Favorite Series here..!</p>
+          <p>You Can Find Details About your Favorite Series here..</p>
           <input
             type="text"
             value={seriesname}

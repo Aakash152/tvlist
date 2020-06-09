@@ -7,7 +7,7 @@ import App from "./App";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/calendar">
     <App />
   </BrowserRouter>,
   rootElement

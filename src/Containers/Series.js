@@ -30,6 +30,7 @@ class Series extends Component {
             value={seriesname}
             onChange={this.onSeriesListChange}
             maxLength="15"
+            size="15"
           />
         </div>
         {!isFetching && series.length === 0 && seriesname.trim() === "" && (

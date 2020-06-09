@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tvlist/static/css/main.6e11845f.chunk.css",
-    "main.js": "/tvlist/static/js/main.ef0262b8.chunk.js",
-    "main.js.map": "/tvlist/static/js/main.ef0262b8.chunk.js.map",
+    "main.js": "/tvlist/static/js/main.4a53539d.chunk.js",
+    "main.js.map": "/tvlist/static/js/main.4a53539d.chunk.js.map",
     "runtime-main.js": "/tvlist/static/js/runtime-main.6e428e57.js",
     "runtime-main.js.map": "/tvlist/static/js/runtime-main.6e428e57.js.map",
     "static/js/2.84cc2c15.chunk.js": "/tvlist/static/js/2.84cc2c15.chunk.js",
     "static/js/2.84cc2c15.chunk.js.map": "/tvlist/static/js/2.84cc2c15.chunk.js.map",
     "index.html": "/tvlist/index.html",
-    "precache-manifest.e5444524d315df6eea2aa0c9d52868e2.js": "/tvlist/precache-manifest.e5444524d315df6eea2aa0c9d52868e2.js",
+    "precache-manifest.e65dc20eafa54f994880d4dfd2d8de01.js": "/tvlist/precache-manifest.e65dc20eafa54f994880d4dfd2d8de01.js",
     "service-worker.js": "/tvlist/service-worker.js",
     "static/css/main.6e11845f.chunk.css.map": "/tvlist/static/css/main.6e11845f.chunk.css.map",
     "static/js/2.84cc2c15.chunk.js.LICENSE.txt": "/tvlist/static/js/2.84cc2c15.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6e428e57.js",
     "static/js/2.84cc2c15.chunk.js",
     "static/css/main.6e11845f.chunk.css",
-    "static/js/main.ef0262b8.chunk.js"
+    "static/js/main.4a53539d.chunk.js"
   ]
 }

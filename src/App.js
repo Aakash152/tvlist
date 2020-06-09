@@ -12,7 +12,7 @@ class App extends Component {
         </header>
         <br />
         <br />
-
+      <input type="text"/>
         <Entry />
       </div>
     );

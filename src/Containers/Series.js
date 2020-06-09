@@ -30,7 +30,7 @@ class Series extends Component {
           <p>You Can Find Details About your Favorite Series here..!</p><br/>
           <FormControl>
 
-            <TextField id="outlined-basic" label="Enter Series Name" variant="outlined" value={seriesname}
+            <TextField  label="Enter Series Name" variant="outlined" value={seriesname}
               onChange={this.onSeriesListChange} maxLength={12}/>
             
           </FormControl>

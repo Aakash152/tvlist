@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Footerw from '../src/Components/Footerw';
 
 import Entry from "../src/Components/Entry";
 
@@ -14,6 +15,10 @@ class App extends Component {
         <br />
         
         <Entry></Entry>
+
+        <br/><br/><br/>
+        <Footerw/>
+
       </div>
     );
   }

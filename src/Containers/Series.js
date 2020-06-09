@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import SeriesList from "../Components/SeriesList";
 import Loader from "../Components/Loader";
-
+import {
+  TextField,
+  FormControl,
+} from "@material-ui/core";
 class Series extends Component {
   state = {
     series: [],
@@ -24,14 +27,13 @@ class Series extends Component {
     return (
       <div>
         <div>
-          <p>You Can Find Details About your Favorite Series here.......</p>
-          <input
-            type="text"
-            value={seriesname}
-            onChange={this.onSeriesListChange}
-            maxLength="15"
-            size="15"
-          />
+          <p>You Can Find Details About your Favorite Series here..!</p><br/>
+          <FormControl>
+
+            <TextField id="outlined-basic" label="Enter Series Name" variant="outlined" value={seriesname}
+              onChange={this.onSeriesListChange} maxLength={12}/>
+            
+          </FormControl>
         </div>
         {!isFetching && series.length === 0 && seriesname.trim() === "" && (
           <p>Please enter Series Name</p>

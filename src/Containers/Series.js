@@ -9,10 +9,15 @@ class Series extends Component {
   state = {
     series: [],
     seriesname: "",
-    isFetching: false
+    isFetching: false,
+    
+   
   };
 
   onSeriesListChange = e => {
+
+
+
     this.setState({ seriesname: e.target.value, isFetching: true });
 
     fetch(`https://api.tvmaze.com/search/shows?q=${e.target.value}`)
@@ -20,6 +25,8 @@ class Series extends Component {
       .then(res2 => {
         this.setState({ series: res2, isFetching: false });
       });
+
+   
   };
 
   render() {
@@ -27,14 +34,17 @@ class Series extends Component {
     return (
       <div>
         <div>
-          <p>You Can Find Details About your Favorite Series here..!</p><br/>
+          <p>You Can Find Details About your Favorite Tv Series here..!</p><br />
           <FormControl>
 
-            <TextField  label="Enter Series Name" variant="outlined" value={seriesname}
-              onChange={this.onSeriesListChange} maxLength={12}/>
-            
+            <TextField name="SeriesName" label="Enter Series Name" variant="outlined" value={seriesname}
+              onChange={this.onSeriesListChange} />
+
           </FormControl>
         </div>
+
+        
+
         {!isFetching && series.length === 0 && seriesname.trim() === "" && (
           <p>Please enter Series Name</p>
         )}
@@ -42,6 +52,11 @@ class Series extends Component {
         {!isFetching && series.length === 0 && seriesname.trim() !== "" && (
           <p>No Records Found</p>
         )}
+        { seriesname.length > 15 && (
+          <p>Maximum 15 Characters</p>
+        )}
+
+
 
         {isFetching ? <Loader /> : <SeriesList list={this.state.series} />}
       </div>

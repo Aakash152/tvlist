@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Tv Series Finder</h1>
         </header>
         <br />
-        <br />
+        
         
         <Entry></Entry>
 

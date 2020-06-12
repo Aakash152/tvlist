@@ -3,7 +3,7 @@ import React from 'react'
  function NoPage() {
     return (
         <div>
-            <h1>No Page Found</h1>
+            <h1>Page Under Development </h1>
         </div>
     )
 }

@@ -42,8 +42,7 @@ class Series extends Component {
 
           </FormControl>
         </div>
-
-        
+        <br/>
 
         {!isFetching && series.length === 0 && seriesname.trim() === "" && (
           <p>Please enter Series Name</p>

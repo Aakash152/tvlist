@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
          <Navbar1/>
-        <header className="App-header">
+        <header>
           <h1 className="App-title">Tv Series Finder</h1>
         </header>
         <br />

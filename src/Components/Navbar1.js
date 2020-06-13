@@ -1,5 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
 import React from 'react'
 import { Navbar, Nav} from "react-bootstrap";
+import '../Components/Css/NavbarD.css';
+
 
 import {Link} from 'react-router-dom';
 export default function Navbar1() {
@@ -10,16 +23,23 @@ export default function Navbar1() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item>
-                  <Nav.Link eventKey="1" as={Link} to="/features">
+
+              <Nav.Item>
+                  <Nav.Link eventKey="1" style={{marginRight: '25px'}} as={Link} to="/features">
                     Features
                   </Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="2" as={Link} to="/pricing">
-                    Pricing
+{/*                
+                  <Link to="/features" eventKey="1" style={{marginRight: '25px'}} className="nav-link" >Fealtures</Link>
+                  <Link to="/pricing" eventKey="2" style={{marginRight: '75px'}} className="nav-link" >Pricing</Link> */}
+               
+               <Nav.Item>
+                  <Nav.Link eventKey="1" className="navl2" as={Link} to="/features">
+                    Contacts
                   </Nav.Link>
                 </Nav.Item>
+            
+             
               </Nav>
             </Navbar.Collapse>
           </Navbar>
